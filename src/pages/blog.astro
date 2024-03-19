@@ -1,21 +1,29 @@
 ---
+import "../styles/global.css";
 
+const pageTitle = "私のAstro学習ブログ";
+const title = "Astro tuto - " + pageTitle;
 ---
 
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <title>{title}</title>
   </head>
   <body>
     <a href="/">ほーむ</a>
     <a href="/about">がいよう</a>
     <a href="/blog">ブログ</a>
 
-    <h1>私のAstro学習ブログ</h1>
+    <h1>{pageTitle}</h1>
     <p>ここには、私がAstroを学んでいく様子を投稿します！</p>
+    <ul>
+      <li><a href="/posts/post-1">記事１</a></li>
+      <li><a href="/posts/post-2">記事２</a></li>
+      <li><a href="/posts/post-3">記事３</a></li>
+    </ul>
   </body>
 </html>
